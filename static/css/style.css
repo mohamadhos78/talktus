@@ -1,0 +1,226 @@
+@font-face {
+  font-family: "Vazir";
+  src: url("/static/fonts/Vazir.eot");
+  src: url("/static/fonts/Vazir.eot?#iefix") format("embedded-opentype"),
+    url("/static/") format("woff2"),
+    url("/static/fonts/Vazir.woff") format("woff"),
+    url("/static/fonts/Vazir.ttf") format("truetype");
+
+}
+@font-face{
+	font-family: Btitr;
+	src:url(/static/fonts/BTITRBD.eot) format('eot'),
+	url(/static/fonts/BTITRBD.woff) format('woff'),
+	url(/static/fonts/BTITRBD.ttf) format('truetype');
+}
+body {
+  direction: rtl;
+  text-align: right !important;
+  font-family: "Vazir" !important;
+  line-height: 1.6;
+  background: #fff;
+}
+body {
+  direction: rtl;
+  text-align: right !important;
+  font-family: "Vazir" !important;
+}
+
+#mainNav {
+  background-color: #fff;
+}
+
+#mainNav .navbar-toggler {
+  font-size: 80%;
+  padding: 0.75rem;
+  color: #64a19d;
+  border: 1px solid #64a19d;
+}
+
+#mainNav .navbar-brand {
+  color: #64a19d;
+  font-weight: 700;
+  padding: 0.9rem 0;
+}
+#mainNav .dropdown-item:hover {
+    background-color:#64a19d;
+    border-radius:15px;
+    animation-duration:3s;
+    animation-delay: 0.5s;
+}
+@media (max-width: 991px) {
+    #banner-par{
+        font-size:1rem;
+    }
+    .video{
+      width:80%;
+      height:80%;
+      border-radius:20px;
+    }
+}
+@media (min-width: 992px) {
+  
+  #mainNav {
+    padding-top: 0;
+    padding-bottom: 0;
+    border-bottom: none;
+    background-color:transparent;
+    transition: background-color 0.3s ease-in-out;
+  }
+  #mainNav .navbar-brand {
+    padding: 0.5rem 0;
+    color: black;
+  }
+  #mainNav .nav-link {
+    border-radius:20px;
+    margin:1rem 1.5rem;
+    padding: 1rem 1.5rem;
+    background-color: rgba(235, 235, 235, 0.5);
+    color:black;
+  }
+  #mainNav .nav-link:hover {
+    background-color: rgba(225, 225, 225, 0.5);
+    color:black;
+  }
+  .dropdown-menu{
+    border-radius:20px;
+    margin:-1rem;
+  }
+
+  #mainNav.navbar-shrink {
+    background-color: #fff;
+  }
+  #mainNav.navbar-shrink .navbar-brand {
+    color: #64a19d;
+    font-weight: bold;
+  }
+  #mainNav.navbar-shrink .nav-link {
+    color: #161616;
+    padding: 1.5rem 1.5rem 1.25rem;
+    border-bottom: 0.25rem solid transparent;
+  }
+  #mainNav.navbar-shrink .nav-link:hover {
+    color: #64a19d;
+  }
+
+  #mainNav.navbar-shrink .nav-link.active {
+    color: #64a19d;
+    border-bottom: 0.25rem solid #64a19d;
+  }
+  .video{
+    width:90%;
+    height: 80%;
+   
+  }
+}
+
+
+#home {
+  height: 100vh;
+  background:url('/static/img/banner.jpg') no-repeat center center/cover;
+  border-radius: 0px 0px 15px 15px;
+}
+#banner {
+  overflow: hidden;
+}
+
+#banner-heading {
+  font-family: Btitr;
+  animation-name: animBaner;
+  animation-duration: 2s;
+}
+
+#banner-par {
+  animation-name: animBaner;
+  animation-duration: 2s;
+  animation-delay: 0.5s;
+  animation-fill-mode: backwards;
+  line-height: 1.6;
+  background-color: rgba(235, 235, 235, 0.5);
+  border-radius:20px;
+  margin-top:20px;
+}
+
+@keyframes animBaner {
+  0% {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+#bg-posts{
+     background-color:#07125C;
+     border-radius:20px;
+     
+}
+#bg-blue{
+     border-radius:15px;
+     background-color: #07125C;
+    
+}
+#bg-red{
+     border-radius:15px;
+     background-color:#880B09;
+     border: 1px solid #07125C;
+}
+#carouselPost{
+  border-radius:15px;
+     background-color:#880B09;
+     border: 1px solid #07125C;
+}
+#bg-red .p-2{
+  text-align: center;
+}
+#links a{
+  color: #fff;
+  text-decoration: none;
+}
+#bg-color{
+   color:#C9C917;
+   text-decoration: none;
+}
+#Footer{
+  background-color:#07125C;
+  border-radius:15px;
+}
+#button-email{
+  background-color:#C9C917;
+  border-radius:15px;
+  border: 1px solid #C9C917;
+}
+#input-text{
+  border-radius:15px;
+}
+h6#bg-color {
+    text-align: center;
+}
+
+#button-search{
+    border-radius:50%;
+    background-color:#880B09;
+    border: 1px solid #07125C;
+    transition: all 0.4s;
+   
+}
+#button-search:hover{
+  transform: translateY(-3px);
+}
+#input-search{
+  border-radius:25px;
+  background-color:#880B09;
+  border: 1px solid #07125C;
+}
+#bg-post{
+  color: black;
+}
+#bg-cantainer{
+  background-color:#dedebe;
+  border-radius:15px;
+}
+#links{
+background-color:#07125C;
+border-radius: 15px;
+}

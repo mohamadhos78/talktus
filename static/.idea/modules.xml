@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/project1.iml" filepath="$PROJECT_DIR$/.idea/project1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../پارت2/boot/exercise_files_bootstrap_v4_in_real_world/project2_bootstrap/.idea/project2_bootstrap.iml" filepath="$PROJECT_DIR$/../../پارت2/boot/exercise_files_bootstrap_v4_in_real_world/project2_bootstrap/.idea/project2_bootstrap.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../پارت2/boot/exercise_files_bootstrap_v4_in_real_world/project4_bootstrap/.idea/project4_bootstrap.iml" filepath="$PROJECT_DIR$/../../پارت2/boot/exercise_files_bootstrap_v4_in_real_world/project4_bootstrap/.idea/project4_bootstrap.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../پارت2/boot/exercise_files_bootstrap_v4_in_real_world/project5_bootstrap/.idea/project5_bootstrap.iml" filepath="$PROJECT_DIR$/../../پارت2/boot/exercise_files_bootstrap_v4_in_real_world/project5_bootstrap/.idea/project5_bootstrap.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../پارت2/boot/exercise_files_bootstrap_v4_in_real_world/project9_bootstrap/.idea/project9_bootstrap.iml" filepath="$PROJECT_DIR$/../../پارت2/boot/exercise_files_bootstrap_v4_in_real_world/project9_bootstrap/.idea/project9_bootstrap.iml" />
+    </modules>
+  </component>
+</project>
