@@ -10,6 +10,7 @@ class Post(models.Model):
     date = models.DateTimeField(auto_now_add=True,blank=False,null=False)
     description = models.CharField(max_length=512, null=False, blank=False)
 
+
     def __str__(self):
         return self.title
     def __unicode__(self):
