@@ -53,6 +53,16 @@
                             <div class="card-body">
                               <img class="img" src={{post.image.url}} alt="image">
                             </div>
+                          {% elif post.Urlimage %}  
+                           <div class="card-body">
+                              <img class="img" src={{post.Urlimage.url}} alt="image">
+                            </div>
+                            {% elif post.Urlvideo %}
+                            <div class="card-body ">
+                              <video controls  class="video">
+                                <source src={{ post.Urlvideo.url}} type="video/mp4">
+                              </video>
+                            </div> 
                           {% elif post.video %}
                             <div class="card-body ">
                               <video controls  class="video">
