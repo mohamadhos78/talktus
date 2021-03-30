@@ -49,26 +49,20 @@
                               <h4>{{post.category.title}}</h4>
                                <h5>{{post.description}}</h5>
                           </div>
-                          {% if post.image%}
-                            <div class="card-body">
-                              <img class="img" src={{post.image.url}} alt="image">
-                            </div>
-                          {% elif post.Urlimage %}  
+                          {% if post.Urlimage %}  
                            <div class="card-body">
-                              <img class="img" src={{post.Urlimage.url}} alt="image">
+                              <img class="img" src={{ post.Urlimage }} alt="image">
                             </div>
-                            {% elif post.Urlvideo %}
-                            <div class="card-body ">
+                          {% elif post.Urlvideo %}
+                            <div class="card-body">
                               <video controls  class="video">
-                                <source src={{ post.Urlvideo.url}} type="video/mp4">
+                                <source src={{ post.Urlvideo }} type="video/mp4">
                               </video>
+                            </div>
+                          {% elif post.category.image %}  
+                           <div class="card-body">
+                              <img class="img" src={{ post.category.image.url }} alt="image">
                             </div> 
-                          {% elif post.video %}
-                            <div class="card-body ">
-                              <video controls  class="video">
-                                <source src={{ post.video.url}} type="video/mp4">
-                              </video>
-                            </div>
                           {% endif %}
                           <div class="card-footer text-white">
                              <h2>{{post.title}} </h2>
