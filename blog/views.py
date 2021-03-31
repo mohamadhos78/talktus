@@ -27,7 +27,7 @@ def posts(request,category):
     title = category
     posts = Post.objects.filter(category__title=title)
     
-    paginator = Paginator(posts, 10)
+    paginator = Paginator(posts, 5)
     posts = paginator.get_page(page)
     context = {
         "posts" : posts ,
@@ -58,7 +58,7 @@ def search(request):
     posts = Post.objects.filter(Q(title__icontains=query) | Q(content__contains=query))
     title = query
 
-    paginator = Paginator(posts, 10)
+    paginator = Paginator(posts, 5)
     posts = paginator.get_page(page)
     context = {
        "posts" : posts ,
@@ -75,7 +75,7 @@ def last_posts(request):
     categories = Category.objects.all()
     posts = Post.objects.all().order_by("-date")
     
-    paginator = Paginator(posts, 10)
+    paginator = Paginator(posts, 5)
     posts = paginator.get_page(page)
     
     title = "آخرین‌ پست‌ها"

@@ -22,7 +22,6 @@
  		<div class="container-fluid">
  			<div dir="ltr" class="row">
  				<div class="col-md-3 Styles my-5 mx-3 bg-filter">
-					<!--Filter-->
 					<div class="row mt-1">
 						<div class="col">
 						<div  class="col text-center mb-1 p-2 Purple ">
@@ -38,7 +37,6 @@
  					</div>
 					{% endfor %}
         </div>
-				<!--end filter-->
 
 				<!--course-->
  	      <div class="col-md-8 main pb-2 mt-5 " >
@@ -64,9 +62,9 @@
  					</div>
          {% endfor %}   
  				
-			<div class="row">
+			<div class="row justify-content-center mt-2">
 				{% if posts %}
-				<ul class="pagination justify-content-center">
+				<ul class="pagination">
 					{% if posts.has_previous %}
 						<li class="page-item">
 							<a  class="page-link" href="?page={{ posts.previous_page_number }}&q={{query}}">previous</a>

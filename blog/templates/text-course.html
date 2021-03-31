@@ -22,7 +22,7 @@
  	    <section  style="height:100%;">
             <div class="container-fluid">
               <div dir="ltr" class="row">
-                <div  class="col-md-3 Styles my-5 mx-3 bg-filter">
+                <div  class="col-md-3 Styles my-5 mx-3 bg-filter" style="order: 2">
                   <!--جلسات-->
                   <div class="row mt-1">
                     <div class="col">
@@ -39,10 +39,11 @@
                     </div>
                   {% endfor %}
                 </div>
+
                 <!--end-->
 
                 <!-- دوره-->
-                  <div class="col-md-8 main pb-2 mt-5  " >
+                  <div class="col-md-8 main pb-2 mt-5" style="order: 1" >
                     <div class="row main1 mt-3 pt-2 pb-2 mx-2 text-center justify-content-around mr-auto">
                         <div class="col card ">
                           <div class="card-header text-white">
@@ -65,7 +66,7 @@
                             </div> 
                           {% endif %}
                           <div class="card-footer text-white">
-                             <h2>{{post.title}} </h2>
+                             <h5>{{post.title}} </h5>
                           </div>
                         </div>
                     </div>
