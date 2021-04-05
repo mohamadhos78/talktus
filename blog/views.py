@@ -5,6 +5,8 @@ from .models import Contact, Category, Post
 def landing(request):
     from .forms import contactform
     form = contactform()
+    categories = Category.objects.all()[:4]
+    print("\n\n",len(categories),"\n\n")
     if request.method == "POST":
         save_form = contactform(request.POST)
         if save_form.is_valid():
@@ -15,8 +17,9 @@ def landing(request):
             member = Contact(email=member_email)
             member.save()
     context = {
+        "categories" : categories ,
     }
-    return render(request, "landingPage.html")
+    return render(request, "landingPage.html",context)
 
 def posts(request,category):
     from django.core.paginator import Paginator

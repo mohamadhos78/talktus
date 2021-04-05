@@ -26,36 +26,18 @@
                             <div class="col">
                               <div id="carouselPost" class="carousel slide" data-ride="carousel">
                                 <div class="carousel-inner"> 
-                                  <div class="carousel-item active" style="height: 230px">
-                                    <img class="img-fluid rounded-circle mb-3" width="200" height="200" src="/static/img/banner.jpg" alt="">
+                                {% for category in categories %}
+                                  <div class="carousel-item{% if forloop.counter == 1 %} active{% endif %}" style="height: 230px">
+                                    <img class="img-fluid rounded-circle mb-3" width="200" height="200" src={{category.image.url}} alt="">
                                     <blockquote class="blockquote">
                                       <h6 class="p-3">
-                                          <a id="bg-color" href="">
-                                                عنوان پست
-                                         </a>
+                                          <a id="bg-color" href={% url 'posts' category.title %}>
+                                            {{category.title}}
+                                          </a>
                                       </h6>
                                     </blockquote>
                                   </div>
-                                  <div class="carousel-item" style="height: 230px">
-                                    <img class="img-fluid rounded-circle mb-3" width="200" height="200" src="/static/img/banner.jpg" alt="">
-                                    <blockquote class="blockquote">
-                                      <h6 class="p-3">
-                                          <a id="bg-color" href="">
-                                            عنوان پست
-                                         </a>
-                                      </h6>
-                                    </blockquote>
-                                  </div>
-                                    <div class="carousel-item" style="height: 230px">
-                                    <img class="img-fluid rounded-circle mb-3" width="200" height="200" src="/static/img/banner.jpg" alt="">
-                                    <blockquote class="blockquote">
-                                      <h6  class="p-3">
-                                          <a id="bg-color" href="">
-                                           عنوان پست
-                                         </a>
-                                      </h6>
-                                    </blockquote>
-                                  </div>
+                                {% endfor %}
                                 </div>
                                 <a class="carousel-control-prev" href="#carouselPost" role="button" data-slide="prev">
                                   <span class="carousel-control-prev-icon" aria-hidden="true"></span>
