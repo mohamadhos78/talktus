@@ -20,15 +20,15 @@
           <div class="row"></div>
             <section >
                 <div id="bg-cantainer" class="container-fluid p-5 text-white">
-                    <h3 id="bg-post" class="text-center mb-5">    آخرین آموزش ها </h3>
+                    <h3 id="bg-post" class="text-center mb-5">آخرین آموزش ها </h3>
                    <div class="container p-3" id="bg-blue">
                           <div class="row text-center">
                             <div class="col">
                               <div id="carouselPost" class="carousel slide" data-ride="carousel">
                                 <div class="carousel-inner"> 
                                 {% for category in categories %}
-                                  <div class="carousel-item{% if forloop.counter == 1 %} active{% endif %}" style="height: 230px">
-                                    <img class="img-fluid rounded-circle mb-3" width="200" height="200" src={{category.image.url}} alt="">
+                                  <div class="carousel-item{% if forloop.counter == 1 %} active{% endif %}" style="height:350px">
+                                    <img class="imgs-fluid mb-3 pt-2" width="200" height="400" src={{category.image.url}} alt="">
                                     <blockquote class="blockquote">
                                       <h6 class="p-3">
                                           <a id="bg-color" href={% url 'posts' category.title %}>
