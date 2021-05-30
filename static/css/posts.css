@@ -187,3 +187,7 @@ header {
   font-weight: bold;
   color: wheat;
 }
+.output{
+  color: #eee;
+  background: black;
+}
